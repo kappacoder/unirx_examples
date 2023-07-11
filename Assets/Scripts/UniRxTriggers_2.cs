@@ -41,7 +41,7 @@ public class UniRxTriggers_2 : MonoBehaviour
         // This allows an application to buffer items to be delivered in batches ( in this case clicks ).
         
         // Throttle: https://docs.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229400(v=vs.103)
-        // Ignores the values from an observable sequence which are followed by another value
+        // Ignores the values from an observable sequence which are followed by another value before due time with the specified source
         
         var clickObservable = example1Button.OnPointerClickAsObservable();
         
